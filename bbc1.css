@@ -1,0 +1,67 @@
+*{
+/* border:2px solid green; */
+    padding:0px;margin: 0px;box-sizing: border-box;
+}
+body{background-image: url("joy.jpg");}
+#main{
+    /* background-color:rgb(24, 23, 23); */
+    width: 1366px;
+    height: auto;
+    /* border: 5px solid yellow; */
+       /* margin-top: 10px; */
+ overflow: hidden;
+ 
+    }
+
+.lii,img{
+    
+        list-style: none;
+       float: left;
+       border-right: 0.1px solid black; 
+    margin-left: 50px;
+    
+    /* color:red; */
+        font-size: 21px;
+    font-weight: bold;
+}
+li{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.lii{
+    padding-right: 30px;
+}
+img{
+    border:none;
+position: relative;
+top:5px;
+
+}
+#img1{padding-left: 60px;}
+.li-internel:hover{
+    color: yellow;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
+.input1{margin-top: 13px;margin-left: 20px;}
+#news{font-size:50px;
+           padding-left:8px;}
+/* start header second */
+           #header2{
+               background-color: red;
+               overflow:hidden;
+              list-style: none;
+            padding-left: 100px;   
+           }
+.li2{
+    color:white;
+    font-size: 20px;
+    border:none;
+    padding:5px 10px;
+    float:left;
+     
+     }
+.li3:hover{
+    padding-bottom: 2.5px;
+    border-bottom: 2px solid white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{padding: 0px;margin: 0px;box-sizing: border-box;}
+    header{
+        margin-top: 150px;
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          /* background-color: red; */
+    }
+    .head{
+        height: 15%;
+        width: 15%;
+     position: relative;
+    }
+    #on{
+        position:absolute;
+        bottom: 150px;
+    height: 1.5cm;
+    width: 4cm;
+       font-size: 30px;
+       background-color: blueviolet;
+       padding: 10px 10px;
+       cursor: pointer;
+    border-radius: 10px;}
+
+    </style>
+</head>
+<body>
+    <header id="heade">
+        <img class="head" src="boff.jpg">
+        <img class="head" src="boff.jpg">
+        <img class="head" src="boff.jpg">
+        <img class="head" src="boff.jpg">
+        <p id="on" onclick='bulb()'>Light OFF</p>
+        <!-- <p id="off">Light OFF</p> -->
+    </header>
+    <script>
+   function bulb(){
+       for(var i=0;i<4;i++)
+       {
+        let value=document.querySelectorAll('.head')[i];
+       
+      if(value.src.match('boff'))
+    {
+        value.src='bon.jpg';
+        document.getElementById('on').innerText='Light ON';
+        
+    }
+     else{
+         value.src='boff.jpg';
+         document.getElementById('on').innerText='Light OFF';
+        //  document.body.style.backgroundColor='white';
+      
+         }
+    }//for close
+ }
+
+
+    </script>
+</body>
+</html>

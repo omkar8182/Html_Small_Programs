@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;padding: 0;margin: 0;}
+        body{background-color: green;}
+        .main{
+              width: 100px;height: 100px;background-color: red;
+              border-radius: 100%;
+              position: absolute;
+              bottom: 0;
+              transform: rotate(360deg);
+           animation: circle 4s linear infinite;
+        }
+        .main1{
+            background-color: blue;
+            position: absolute;bottom: 0;right: 0;
+            animation: circle1 4s linear infinite;
+
+        }
+        .main2{
+            background-color:yellow;
+            position: absolute;bottom: 100px;right: 100px;
+            animation: circle1 4s linear infinite;
+
+        }
+        @keyframes circle{
+            
+            0%{margin-left: 0;margin-bottom: 400px }
+            10%{margin-left: 150px;margin-bottom: 0}
+            20%{margin-left: 300px;margin-bottom: 400px}
+            30%{margin-left: 450px;margin-bottom: 0px}
+            40%{margin-left: 600px;margin-bottom: 400px}
+            50%{margin-left: 750px;margin-bottom: 0}
+            60%{margin-left: 900px;margin-bottom: 400px}
+            70%{margin-left: 1050px;margin-bottom: 0}
+             80%{margin-left: 1100px;margin-bottom: 400px}
+             90%{margin-left: 1150px;margin-bottom: 0}
+            100%{margin-left: 1256px;margin-bottom: 40px}
+        }
+        @keyframes circle1{
+            
+            0%{margin-right: 0;margin-bottom: 400px }
+            10%{margin-right: 150px;margin-bottom: 0}
+            20%{margin-right: 300px;margin-bottom: 400px}
+            30%{margin-right: 450px;margin-bottom: 0px}
+            40%{margin-right: 600px;margin-bottom: 400px}
+            50%{margin-right: 750px;margin-bottom: 0}
+            60%{margin-right: 900px;margin-bottom: 400px}
+            70%{margin-right: 1050px;margin-bottom: 0}
+             80%{margin-right: 1100px;margin-bottom: 400px}
+             90%{margin-right: 1150px;margin-bottom: 0}
+            100%{margin-right: 1256px;margin-bottom: 40px}
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="main1 main"></div>
+    <div class="main2 main"></div>
+    <div class="main3 main"></div>
+    <div class="main4 main"></div>
+</body>
+</html>

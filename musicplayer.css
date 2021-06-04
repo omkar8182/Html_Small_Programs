@@ -1,0 +1,33 @@
+
+*{
+    overflow: hidden;
+    padding: 0;margin: 0;box-sizing: border-box; 
+    
+}
+body{
+    background-image: url("images/music1.jpg");background-repeat: no-repeat;background-size: cover;
+}
+.header{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 90%;
+    /* background-image: linear-gradient(to right,rgb(105, 105, 150),rgb(196, 102, 102)); */
+     /* display: flex;align-items: center;justify-content: center; */
+}
+#mainimg
+{
+    position: absolute;top:41%;left:50%;transform: translate(-50%, -50%);
+    height: 80%;width: 90%;
+    border-radius: 3%;
+}
+
+#fonts {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+
+}
+.fas:hover{cursor: pointer;}

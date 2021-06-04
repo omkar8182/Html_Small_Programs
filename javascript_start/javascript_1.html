@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ #div2{
+   /* animation:start1 3s linear; */
+
+
+ }
+ @keyframes start1{
+   from{padding-left: 0px;}
+   to{padding-left: 500px;}
+ }
+</style>
+<body>
+    <div id="h"><h1>Hello javascript1
+    </h1></div>
+    <!-- <input type="button" onload="fun()" value="Hey load me" > -->
+      <!-- <input type="button" onclick="fun()" value="hey click me"> -->
+      <!-- <input type="button" onmouseover="fun()" value="hey man hover me"> -->
+      <!-- <input type="button" onmouseout="fun()" value="hey don't go out"> -->
+      <!-- <input type="button" onmousewheel="fun()" value="hey man scroll me"> -->
+      <!-- <input type="button" onmousedown="fun()" value="hey mouse down"> -->
+      <!-- <input type="button" onmouseup="fun()" value="hey click me"> -->
+      
+      <!-- settimeinterverls event -->
+ <div id="div2"><h2>
+     Hello
+ </h2></div>
+ <input type="button" onclick="start()" value="start">
+ <input type="button" onclick="stop()" value="stop">
+
+<!-- This script for cofirm function if return true than print weollcome to javascript 
+else print Bye javascript -->
+    <!-- <script>
+    function conform(){
+var t=confirm("wellcome");
+  return t;}
+
+  if(conform()==true)
+  {
+    document.getElementById("h").innerHTML="<h1>Wellcome to javascript</h1>";
+  }
+  else 
+  {
+      document.getElementById('h').innerHTML="Bye javascript";  
+  } -->
+<!-- </script>     -->
+<!-- This script for mouse event -->
+<!-- <script>
+function fun()
+{
+  alert("Hello Man");    
+} -->
+
+<!-- </script> -->
+<!-- script for event listner -->
+<!-- <script> -->
+<!-- //var t=setTimeout(fun(),200000); -->
+<!-- // var t=setInterval(fun(),2000000);
+// function fun()
+// {
+//     document.write("hey");
+// }
+// var time=new Date;
+// document.write(time.getDate());
+// </script> -->
+<script>
+ function st()
+{
+        var t=document.getElementById("div2");
+       
+  // alert("hjell");
+}
+  function start(){
+
+    p=setInterval(st(),2000);
+    //  alert("hwll?");  
+  }
+  function stop(){
+      removeEventListener(p);
+      alert("stop");
+  }
+
+</script>
+</body>
+</html>

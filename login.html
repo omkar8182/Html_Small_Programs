@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://font.googleeapis.com/icon?family=material+Icons">
+    <style>
+*
+{
+    padding: 0px;
+    margin: 0px;
+     box-sizing: border-box;
+}
+body{
+    background-image: url(bk.png);
+   
+}
+.name::-moz-clear
+{
+    display: none;
+}
+header
+{
+    margin-top: 9em;
+ display: flex;
+ justify-content: center;
+}
+.name
+{
+  width: 32vw;
+  height: 9vh;
+    border-radius: 1em;
+  background-color: rgba(0,0,0,1);
+  color: white;
+  font-size: 1.4em;
+  padding: 30px 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name1
+{
+    margin-top: 5vh;
+}
+.box
+{
+    color:rgb(85, 85, 201);
+    font-size: 35px;
+    opacity: 0.8;
+}
+.submit
+{
+    margin-top: 10vh;
+    margin-left: 4vw;
+    font-size: 30px;
+    background-color: rgba(247, 81, 4, 0.699);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 6px;
+   
+
+}
+.back
+{
+    color: blanchedalmond;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 7vh;
+    
+}
+.sub{
+         margin-left: 8vw;
+        
+}
+
+input[type="checkbox"]
+{
+    margin-top: 4vh;
+    height: 50px;
+    width: 20px;
+    color: rgba(0,0,0,1);
+}
+
+    </style>
+    <script type="text/javascript">
+    function error1()
+    {
+        var a=document.btn.btn1.value;
+        if(a==null)
+         {
+            document.getElementById("mess").innerHTML="enter name";
+         }
+    }
+   
+
+    </script>
+</head>
+<body>
+    <header>
+    <form  name="btn" onsubmit="return error1()">
+        <div class="main">
+    <div>
+        <i class="fa fa-user fa-lg fa-fw" area-hidden="true"></i>
+
+        <input type="text" name="btn1" class="name" placeholder="Enter your name" value=""></div>
+        <span id="mess" style="color:blue;"></span>
+    <div><input type="text" class="name name1" placeholder="Enter your Hoby"></div>
+
+   
+
+    <div ><input type="Reset" class="submit" style="float: left;"></div>
+    <div><button class="submit sub" type="submit">Submit </button></div>
+    <div class="back"><a href="quiz.html">Back</div>
+        
+  
+    </div>
+</form>
+</header>
+</body>
+</html>

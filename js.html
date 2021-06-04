@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    *{padding: 0px;margin: 0px;box-sizing: border-box;}
+    /* #a{height: 30vh;width: 34vw; background-image: url(railway: NaNjpg;);} */
+      .div2{
+          height: 22vh;width: 22vw;font-size: 30px;padding: 20px;
+          border: 2px solid red;
+          background-image: linear-gradient(to left,pink,blue);
+          border-radius: 50%;
+          cursor: pointer;
+      }
+      .div2:hover{
+          zoom: 1.2;
+      }
+      #div3{
+          margin-top: 20vh;
+          border: 2px solid black;
+          background-image: linear-gradient(to right,pink,red);
+          border-radius: 50%;
+      }
+</style>
+<body>
+    <!-- <div id="a"> -->
+    <!-- <a href="railway.jpg">ukehekh   </a></div> -->
+     <!-- <li id="div2"><img src="bk.png" alt="error"></li> -->
+     <ul>
+       
+        <li class="div2" onclick="fun()">click me for play</li>
+        <li id="div3"class="div2" onclick="pauseme()">click me for pause</li>
+    </ul>
+      <script>
+           var a=new Audio();
+           var played=false;
+          function fun(){
+             var list=["englishsongs.mp3",".mp3"];
+             a.src=list[1];
+             if(played==true)
+             {
+                 a.pause();
+                 played=false;
+             }
+             else{
+                a.play();
+                played=true;
+             }
+            
+          }
+      </script>
+    </body>
+</html>

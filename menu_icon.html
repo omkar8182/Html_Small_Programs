@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+<style>
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+ /* border: 2px solid black; */
+}
+body{
+    background-image: linear-gradient(to right,rgb(64, 122, 64),rgb(74, 118, 212));
+}
+.list_items{    
+      
+       font-weight: bold;font-style:italic;
+        list-style: none;
+}
+    #bar{
+        font-size: 90px;  
+    
+    }
+    #main{
+    
+     background-color: rgb(209, 44, 44);
+     width: 200vw;
+     height: auto;  
+    }
+    .fa:hover{color: white}
+    .list_items:hover{
+     
+     /* border-top:2px solid black; */
+     
+     border-bottom:2px solid black;
+     cursor: pointer;
+     background-color: yellow;
+     color: rgb(31, 31, 231);
+    transition: all .1s linear;
+    } 
+
+  .fa:hover{cursor: pointer;}
+  
+
+  @media only screen and (max-width: 768px) {
+    #bar{
+        font-size: 40px;
+    }
+    .list_items{
+     
+     font-size: 100px;
+     padding-top: 5vw;
+     
+ }
+ #main{
+     
+        width: 44vw;
+     padding-left: 0;padding-right: 0;
+        height:auto;
+        display: none; 
+        background-color: rgb(73, 83, 117);
+        /* padding: 1px 5px 5px 5px; */
+
+     }
+     #bars{
+        background-color: rgb(180, 143, 75);
+        width:44vw;
+    }
+    .list_items:hover{
+    
+     
+     padding-left:7vw;
+     cursor: pointer;
+     transition: all .1s linear;
+     color: rgb(102, 190, 43);
+     background-color:rgb(113, 71, 240);
+    border:none;
+     
+    }
+    .contactus:hover{
+        padding-left: 3vw;
+} 
+    .list_items{
+        padding:1vw 0 2vw 3vw;
+        margin-bottom: 2vw;
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px){
+
+#main{
+  padding: 2.0vh;   
+
+}
+
+#bar{
+    display: none;
+}
+.list_items{
+    display: inline;
+    padding: 0.8vw 2vw 0.8vw 3vw;
+
+    margin-left: 2vw;
+    border-radius:50%; 
+    font-size: 30px;
+}
+}
+  
+
+</style>
+</head>
+<body>
+<!-- <i class="fa fa-times" id="cross"></i> -->
+<header>
+    <div id="bars"><i class="fa fa-bars" id="bar"></i></div>
+                    <ul id=main>    
+                        <li class="list_items"><a href="menu.html">Home</a></li>
+                        <li class="list_items">About</li>
+                        <li class="list_items">History</li>
+                        <li class="list_items contactus">Contact Us</li>
+                        <li class="list_items">Call on</li>
+                    </ul>    
+</header>
+<script>
+    var a=document.getElementById('bar');
+    var main=document.getElementById('main');
+    a.addEventListener('click',function(){
+     
+        if(a.classList.contains('fa-bars')){
+                           a.classList.add('fa-times');
+                           a.classList.remove('fa-bars');
+                           main.style.display='block';
+                              }
+        else{
+             a.classList.add('fa-bars');
+             a.classList.remove('fa-times');
+             main.style.display='none';
+           }
+    });
+</script>
+</body>
+</html>

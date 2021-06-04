@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+<style>
+*{padding: 0px;margin: 0;box-sizing: border-box;}
+body{background-color: rgb(49, 43, 43);}
+.first{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    float:left;
+    animation: run 4s 1 linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+.second{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+   
+     float:right;
+     animation: run2 2s 1 linear;
+     animation-delay: 4.5s;
+     animation-fill-mode: forwards;
+}
+
+.four{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position:absolute;
+    float:right;
+    bottom:0px;
+    right:0px;
+    animation: run3 2s 1 linear;
+     animation-delay: 6.5s;
+     animation-direction:initial;
+     animation-fill-mode: forwards;     
+}
+.third{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position:absolute;
+    bottom:0px;
+    float:right;
+    animation: run4 2s 1 linear;
+     animation-delay: 8.5s;   
+     animation-fill-mode: forwards; 
+}
+.play{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 40px;
+    border:3px solid yellowgreen; 
+    border-radius:30px;
+    padding:10px;
+}
+    
+@keyframes run{
+    from{margin-left: 0px;}
+    to{margin-left: 1266px;}
+}
+@keyframes run2{
+    from{margin-top: 0px;background-color:red;}
+    to{margin-top: 551px;background-color: red;}
+}
+@keyframes run3{
+    from{margin-top: 0px;background-color:red;}
+    to{margin-right: 1266px;background-color:red}
+}
+@keyframes run4{
+    from{margin-bottom: 0px;background-color:red;}
+    to{margin-bottom: 551px;background-color:red;}
+}
+
+</style>
+</head>
+
+<body>
+    <div class="first" onmouseover=fun()></div>
+    <div class="second"></div>
+    <!-- <div  class="play">Play</div> -->
+    <div class="third"></div>
+    <div class="four"></div>
+<script>
+var a=document.getElementsByClassName("first");
+var b=document.getElementsByClassName("second");
+var c=document.getElementsByClassName("third");
+a.setInterval(fun,2000);
+function fun(){
+    alert("hey don't touch me");
+}
+
+</script>
+</body>
+</html>

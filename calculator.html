@@ -1,0 +1,128 @@
+ <html>
+<head>  <title>  css</title></head>
+<style>
+    body{
+         padding:0;
+         margin 0;
+         background-color: blueviolet;
+         
+    }
+.second {
+ position: relative;
+ top:5px;
+ left:5px;
+ height:80px;
+ width:290px;
+    border:2px solid black;
+    border-radius: 30px;
+   // rgb(207, 250, 248);
+ 
+}
+
+.first {
+    margin-top:100px; 
+    margin-left: 40%;
+    margin-right: 60%;
+    margin-bottom: 200 px; 
+  border:2px solid black;
+  width:300px;
+  height:400px;
+  background-color:rgb(46,45,45);
+
+}
+.third
+{
+   position:relative;
+   left: 6px;
+   top: 6px;
+   width: 50px;
+   height:50px;
+   float: left;
+   padding-left: 42px;
+   padding-right: 50px;
+  // background-color:rgb(244,144,44)
+  border: 2px solid black;
+  border-radius: 200px;
+
+}
+
+.four
+{
+   // padding-top: 5px;
+}
+
+
+</style>
+<body>
+    <divname="ca"></div>
+    <form  class="first"  name="cal">
+
+    <div><input type="text"  name="display" class="second"></div>
+    <div><input type="button" value="1"  onclick="cal.display.value+='1'" class ="third"></div>
+    <div><input type="button" value="2"  onclick="cal.display.value+='2'"class ="third"></div>
+    <div><input type="button" value="3"  onclick="cal.display.value+='3'" class ="third"></div><br>
+    <div class="four">
+    <div><input type="button" value="4"  onclick="cal.display.value+='4'" class ="third"></div>
+    <div><input type="button" value="5"  onclick="cal.display.value+='5'" class ="third"></div>
+    <div><input type="button" value="6"  onclick="cal.display.value+='6'" class ="third"></div>
+    </div>
+    <div><input type="button" value="7" onclick="cal.display.value+='7'"  class ="third"></div>
+    <div><input type="button" value="8"  onclick="cal.display.value+='8'" class ="third"></div>
+    <div><input type="button" value="9"  onclick="cal.display.value+='9'" class ="third"></div>
+
+    <div><input type="button" value="+"  onclick="cal.display.value+='+'" class ="third"></div>
+    <div><input type="button" value="0"  onclick="cal.display.value+='0'" class ="third"></div>
+    <div><input type="button" value="-"  onclick="cal.display.value+='-'" class ="third"></div>
+
+    <div><input type="button" value="*" onclick="cal.display.value+='*'" class ="third"></div>
+    <div><input type="button" value="/" onclick="cal.display.value+='/'" class ="third"></div>
+    <div><input type="button" value="%" onclick="cal.display.value+='%'" class ="third"></div>
+
+    <div><input type="button" value="c" onclick="cal.display.value+='c'" class ="third"></div>
+    <div><input type="button" value="Ac" onclick="cal.display.value =''" class ="third"></div>
+    <div><input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)" class ="third"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>    
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

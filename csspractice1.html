@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+          padding: 0;margin: 0;box-sizing: border-box;
+           font-family: Verdana;
+      }
+        #main{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(54,60,145);
+            position:absolute;
+            left: 50%;
+              top: 50%;
+            transform: translate(-50%,-50%);
+          
+         }
+         .cen{
+                     padding-left: 22%;
+                     padding-top: 47%;  
+    
+               }
+         .child{
+             font-size:40px;
+             float: left;
+             letter-spacing: 1px;
+                  /* animation: animate 5s linear 2s; */
+         }
+        
+         .child:nth-child(1)
+         {         
+             
+              color: green;
+                  animation: animate 1s linear 1s;
+         }
+          .child:nth-child(2)
+         {
+              color:black;
+                  animation: animate 1s linear  1.5s;
+         } .child:nth-child(3)
+         {
+              color: yellow;
+                  animation: animate 1s linear 2s;
+         } .child:nth-child(4)
+         {
+              color: yellowgreen;
+              animation:animate 1s linear 2.5s ;
+         } .child:nth-child(5)
+         {
+              color: pink;
+                  animation: animate 1s linear 3s ;
+         } .child:nth-child(6)
+         {
+              color: orange;
+                  animation: animate 1s linear 3.5s ;
+         } .child:nth-child(7)
+         {
+              color: orchid;
+        
+                  animation: animate 1s linear 4s ;
+         }
+
+         
+         @keyframes animate {
+               0%{
+                     /* padding-bottom: 50px; */
+               }
+
+               /* 50%{padding-bottom: 100px;} */
+
+               100%{
+                   /* font-size: 50px; */
+                   padding-top: 130px;
+               }    
+               
+         }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div class="cen">
+        <h2 class="child">L</h2>
+        <h2 class="child">o</h2>
+        <h2 class="child">a</h2>
+        <h2 class="child">d</h2>
+        <h2 class="child">i</h2>
+        <h2 class="child">n</h2>
+        <h2 class="child">g</h2>
+    </div>
+    </div>
+</body>
+</html>
